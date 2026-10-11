@@ -56,7 +56,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;background:rad
 <div class="ctl" id="fire">FIRE</div>
 <div class="ctl" id="swb" style="right:132px;width:84px;height:84px;border-radius:50%;border:3px solid #fff;background:radial-gradient(circle,#ff6a6a,#c41a1a);color:#fff;font-weight:800;display:none;align-items:center;justify-content:center">SWING</div>
 <div class="ctl" id="abil"><button class="ab">MSL</button><button class="ab">BEAM</button><button class="ab">SHLD</button><button class="ab">NANO</button><button class="ab">HEAL</button></div>
-<div id="ov"><div id="card"><h1 id="t">AVENGERS: BREAKPOINT</h1><p id="m">MISSION BRIEFING: hostile drones are overrunning the city. Survive the swarms to draw out each boss. Defeat all 10 bosses in one run to win. Drag the left pad to steer, hold FIRE to shoot. Desktop: WASD, Space to fire, keys 1-5 for missiles, unibeam, shield, nano bomb and nanobot heal.</p><div id="suits"></div><div id="ds" style="font-size:12px;line-height:1.35;text-align:left;margin:0 0 10px;white-space:pre-line;opacity:.9"></div><button id="go">LAUNCH</button><button id="rs" class="sb" style="display:none;margin-left:8px">RESTART</button><button id="mm" class="sb" style="display:none;margin-left:8px">MAIN MENU</button><button id="mpb" class="sb" style="margin-left:8px">MULTIPLAYER</button><button id="gfx" class="sb" style="margin-left:8px">GRAPHICS: HIGH</button><div id="mpp" style="display:none;margin-top:10px"><div id="mst" style="font-size:14px;margin-bottom:6px;word-break:break-word;white-space:pre-line">Pick your hero above, then host or join.</div><input id="un" maxlength="12" placeholder="Username" style="width:110px;padding:6px;border-radius:9px;border:2px solid var(--gold);background:transparent;color:var(--fg);font:700 14px system-ui"> <button class="sb" id="mh">HOST</button> <input id="mc" maxlength="4" inputmode="numeric" placeholder="1234" style="width:72px;padding:6px;border-radius:9px;border:2px solid var(--gold);background:transparent;color:var(--fg);font:700 14px system-ui;text-transform:uppercase"> <button class="sb" id="mj">JOIN</button> <button class="sb" id="ms" style="display:none">START</button></div><div style="margin-top:10px;font-size:12px;opacity:.7">v12.6: Fully Adjusted Characters, Mechanics, Settings, and Multiplayer. Fully Optimized.</div></div></div>
+<div id="ov"><div id="card"><h1 id="t">AVENGERS: BREAKPOINT</h1><p id="m">MISSION BRIEFING: hostile drones are overrunning the city. Survive the swarms to draw out each boss. Defeat all 10 bosses in one run to win. Drag the left pad to steer, hold FIRE to shoot. Desktop: WASD, Space to fire, keys 1-5 for missiles, unibeam, shield, nano bomb and nanobot heal.</p><div id="suits"></div><div id="ds" style="font-size:12px;line-height:1.35;text-align:left;margin:0 0 10px;white-space:pre-line;opacity:.9"></div><button id="go">LAUNCH</button><button id="rs" class="sb" style="display:none;margin-left:8px">RESTART</button><button id="mm" class="sb" style="display:none;margin-left:8px">MAIN MENU</button><button id="mpb" class="sb" style="margin-left:8px">MULTIPLAYER</button><button id="gfx" class="sb" style="margin-left:8px">GRAPHICS: HIGH</button><div id="mpp" style="display:none;margin-top:10px"><div id="mst" style="font-size:14px;margin-bottom:6px;word-break:break-word;white-space:pre-line">Pick your hero above, then host or join.</div><input id="un" maxlength="12" placeholder="Username" style="width:110px;padding:6px;border-radius:9px;border:2px solid var(--gold);background:transparent;color:var(--fg);font:700 14px system-ui"> <button class="sb" id="mh">HOST</button> <input id="mc" maxlength="4" inputmode="numeric" placeholder="1234" style="width:72px;padding:6px;border-radius:9px;border:2px solid var(--gold);background:transparent;color:var(--fg);font:700 14px system-ui;text-transform:uppercase"> <button class="sb" id="mj">JOIN</button> <button class="sb" id="ms" style="display:none">START</button> <button class="sb" id="mt">TURN KEY</button></div><div style="margin-top:10px;font-size:12px;opacity:.7">v12.6: Fully Adjusted Characters, Mechanics, Settings, and Multiplayer. Fully Optimized.</div></div></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
@@ -362,13 +362,13 @@ function blast(r,c,bd,ce){
 }
 PARTS[15]=[['s',3.2,0,0,0x5a6070,0,5,0],['b',9,.5,1.5,0x2a2e38,0,5,0],['s',1,0,0,0xff3030,0,5,3]];
 PARTS[16]=[['b',6,9,4,0x8a2a2a,0,2,0],['b',3,3,3,0x5a1a1a,0,8,0],['b',2.5,7,2.5,0x6a2020,-5,1,0],['b',2.5,7,2.5,0x6a2020,5,1,0],['b',2,6,2,0x2a2a30,-2,-5,0],['b',2,6,2,0x2a2a30,2,-5,0]];
-PARTS[17]=[['b',6,10,3.5,0x2a3a6a,0,0,0],['s',1.7,0,0,0x7a8aa8,0,6.8,0],['b',2.2,.8,2.2,0x4a5a8a,0,8.6,0],['b',2,8,2,0x2a3a6a,-6,0,0],['b',2,8,2,0x2a3a6a,6,0,0],['b',.8,13,.8,0x8a8a98,9,1,1],['b',4.5,3,3,0x6a6a7a,9,8.5,1],['s',1,0,0,0x7fb0ff,9,8.5,3]];
+PARTS[17]=[['b',8,12,5,0x2a1a6a,0,0,0],['s',2.4,0,0,0x3a2a8a,0,8,0],['b',5.5,1.2,3,0x40e0a0,0,8.4,1.5],['b',8.6,1.4,5.4,0x40d090,0,3,0],['b',2.6,10,2.6,0x2a1a6a,-7,0,0],['b',2.6,10,2.6,0x2a1a6a,7,0,0],['b',3,4,3,0x40d090,-7,6,0],['b',3,4,3,0x40d090,7,6,0],['s',1.4,0,0,0x40ffb0,0,2,3.2]];
 PARTS[18]=[['b',10,11,6,0x3a8a3a,0,0,0],['b',4.4,3.8,4,0x4a9a4a,0,7.2,0],['b',3.4,9,3.4,0x3a8a3a,-7.5,0,0],['b',3.4,9,3.4,0x3a8a3a,7.5,0,0],['b',3,7,3,0x2a5a8a,-3,-8,0],['b',3,7,3,0x2a5a8a,3,-8,0],['b',9,1,.6,0x6a3a8a,0,-3,3.2]];
 PARTS[19]=[['b',9,12,5.5,0xb02a22,0,0,0],['s',2.6,0,0,0xc03a2a,0,8,0],['b',3,.8,2,0xffe040,0,8.3,2.4],['b',3,10,3,0xa0241c,-7.5,0,0],['b',3,10,3,0xa0241c,7.5,0,0],['b',3,7,3,0x4a1a14,-3,-8,0],['b',3,7,3,0x4a1a14,3,-8,0],['s',1.4,0,0,0xff8a30,0,2,3.2]];
 BT.push(
  {n:'ULTRON SENTRY',k:15,hp:40,rate:2,off:[0],c:0xff4040,spd:.6,dmg:8,ps:55,sp:[],si:99},
  {n:'TASKMASTER',k:16,hp:75,rate:1.3,off:[-6,6],c:0xff7030,spd:1.3,dmg:10,sp:['charge'],si:7},
- {n:'RONAN',k:17,hp:110,rate:1.6,off:[-8,0,8],c:0x5a8aff,spd:1,dmg:11,sp:['missiles','aoe'],si:6},
+ {n:'KANG THE CONQUEROR',k:17,hp:110,rate:1.6,off:[-8,0,8],c:0x8a6aff,spd:1,dmg:11,sp:['missiles','aoe'],si:6},
  {n:'ABOMINATION',k:18,hp:150,rate:1.2,off:[-12,-4,4,12],c:0x50e060,spd:.6,dmg:14,sp:['shield','aoe','charge'],si:7},
  {n:'RED HULK',k:19,hp:230,rate:1,off:[-16,-8,0,8,16],c:0xff4a2a,spd:1,dmg:15,sp:['x'],si:5.5,fin:1,sc:1.25,sz:1.3});
 const RWD=[['+20 max health',()=>{SU.hp+=20;hp+=20}],['+20% weapon damage',()=>{SU.d*=1.2}],['faster weapons',()=>{SU.rate*=.85}],['+25 max health',()=>{SU.hp+=25;hp+=25}]];
@@ -588,28 +588,39 @@ function onHost(o,m){
   else if(m.t==='f')remoteFire(o);
   else if(m.t==='u')remoteUse(o,m.i);
 }
-const MY_TURN={urls:['turn:openrelay.metered.ca:80','turn:openrelay.metered.ca:443','turn:openrelay.metered.ca:443?transport=tcp'],username:'openrelayproject',credential:'openrelayproject'}; /* optional: paste {urls:'turn:...',username:'...',credential:'...'} from a free TURN account to help strict networks connect */
+const MY_TURN=null; /* optional: paste {urls:'turn:...',username:'...',credential:'...'} from a free TURN account to help strict networks connect */
 const PO={config:{iceCandidatePoolSize:4,iceServers:[{urls:'stun:stun.l.google.com:19302'},{urls:'stun:stun1.l.google.com:19302'},{urls:'stun:global.stun.twilio.com:3478'}].concat(MY_TURN?[MY_TURN]:[])}};
+function refreshTurn(){let t=null;try{const j=localStorage.getItem('abp_turn');if(j)t=JSON.parse(j)}catch(e){}
+  const l=t?(Array.isArray(t)?t:t.iceServers?t.iceServers:[t]):(MY_TURN?[MY_TURN]:[]);
+  PO.config.iceServers=[{urls:'stun:stun.l.google.com:19302'},{urls:'stun:stun1.l.google.com:19302'},{urls:'stun:global.stun.twilio.com:3478'}].concat(l)}
 function setTag(g,n){if(!g||!n||g.userData.nm===n)return;g.userData.nm=n;if(g.userData.tg)g.remove(g.userData.tg);const c=document.createElement('canvas');c.width=256;c.height=64;const x=c.getContext('2d');x.font='bold 34px sans-serif';x.textAlign='center';x.fillStyle='rgba(0,0,0,.6)';x.fillRect(8,8,240,48);x.fillStyle='#fff';x.fillText(n,128,44);const s=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c),depthTest:false,transparent:true}));s.scale.set(5,1.25,1);s.position.y=3.2;s.renderOrder=9;g.add(s);g.userData.tg=s}
-const MQ_URL='wss://broker.hivemq.com:8884/mqtt';
+const MQ_URLS=['wss://broker.hivemq.com:8884/mqtt','wss://broker.emqx.io:8084/mqtt','wss://test.mosquitto.org:8081','wss://mqtt.eclipseprojects.io/mqtt'];
 function mqConn(peer,pub){const h={},c={peer,relay:true,on(e,f){(h[e]=h[e]||[]).push(f)},emit(e,a){(h[e]||[]).forEach(f=>f(a))},send(m){try{pub({k:'d',m})}catch(e){}},close(){try{pub({k:'bye'})}catch(e){}setTimeout(()=>c.emit('close'),1)}};return c}
+function mqOpen(onMsg,onUp){
+  const L=MQ_URLS.map(u=>{const o={url:u,up:0,cl:null};try{o.cl=mqtt.connect(u,{connectTimeout:8000,reconnectPeriod:2500,keepalive:30});
+    o.cl.on('connect',()=>{o.up=1;onUp(o)});o.cl.on('close',()=>{o.up=0});o.cl.on('error',()=>{});
+    o.cl.on('message',(t,p)=>{let m;try{m=JSON.parse(p.toString())}catch(e){return}if(m)onMsg(o,t,m)})}catch(e){}return o});
+  return {L,n:()=>L.filter(o=>o.up).length,end(skip){L.forEach(o=>{if(o!==skip){try{o.cl.end(true)}catch(e){}}})}}}
 function mqHost(code,up){
   if(typeof mqtt==='undefined')return;
-  try{if(NET.mq)NET.mq.end(true)}catch(e){}
-  const cl=mqtt.connect(MQ_URL,{connectTimeout:8000,reconnectPeriod:2000}),cs={},T='abp1/'+code;NET.mq=cl;
-  cl.on('connect',()=>{cl.subscribe(T+'/h',()=>up&&up())});
-  cl.on('message',(t,p)=>{let m;try{m=JSON.parse(p.toString())}catch(e){return}if(!m||!m.c)return;let c=cs[m.c];
-    if(m.k==='hello'){if(!c){c=cs[m.c]=mqConn(m.c,o=>cl.publish(T+'/c/'+m.c,JSON.stringify(o)));onConn(c)}cl.publish(T+'/c/'+m.c,JSON.stringify({k:'ok'}))}
-    else if(c&&m.k==='d')c.emit('data',m.m);
-    else if(c&&m.k==='bye'){delete cs[m.c];c.emit('close')}});
-}
+  try{if(NET.mq)NET.mq.end()}catch(e){}
+  const T='abp1/'+code,cs={},pubVia=(o,t,x)=>{try{if(o&&o.up)o.cl.publish(t,JSON.stringify(x))}catch(e){}};
+  const mq=mqOpen((o,t,m)=>{if(!m.c)return;let c=cs[m.c];
+      if(m.k==='hello'){if(!c){const id=m.c;c=cs[id]=mqConn(id,x=>pubVia(cs[id]&&cs[id].via,T+'/c/'+id,x));c.via=o;onConn(c)}pubVia(o,T+'/c/'+m.c,{k:'ok'})}
+      else if(c&&m.k==='d'){c.via=o;c.emit('data',m.m)}
+      else if(c&&m.k==='bye'){delete cs[m.c];c.emit('close')}},
+    o=>{o.cl.subscribe(T+'/h',()=>{if(!NET.run&&up)up()})});
+  NET.mq=mq}
 function mqJoin(code){
-  const cid=Math.random().toString(36).slice(2,9),T='abp1/'+code,cl=mqtt.connect(MQ_URL,{connectTimeout:8000,reconnectPeriod:2000});
-  const pub=o=>cl.publish(T+'/h',JSON.stringify(Object.assign({c:cid},o))),c=mqConn(cid,pub);let up=0,tk=0;
-  cl.on('connect',()=>cl.subscribe(T+'/c/'+cid,()=>{const hi=()=>{if(!up)pub({k:'hello'})};hi();clearInterval(tk);tk=setInterval(hi,1500)}));
-  cl.on('message',(t,p)=>{let m;try{m=JSON.parse(p.toString())}catch(e){return}
-    if(m.k==='ok'&&!up){up=1;clearInterval(tk);c.emit('open')}else if(m.k==='d')c.emit('data',m.m);else if(m.k==='bye')c.emit('close')});
-  c.close=()=>{clearInterval(tk);try{pub({k:'bye'})}catch(e){}setTimeout(()=>{try{cl.end(true)}catch(e){}},50)};
+  const cid=Math.random().toString(36).slice(2,9),T='abp1/'+code;let via=null,up=0,tk=0,tried=0;
+  const c=mqConn(cid,x=>{try{if(via&&via.up)via.cl.publish(T+'/h',JSON.stringify(Object.assign({c:cid},x)))}catch(e){}});
+  const hi=()=>{if(up)return;tried=1;mq.L.forEach(o=>{try{if(o.up&&o.sub)o.cl.publish(T+'/h',JSON.stringify({c:cid,k:'hello'}))}catch(e){}})};
+  const mq=mqOpen((o,t,m)=>{
+      if(m.k==='ok'&&!up){up=1;via=o;clearInterval(tk);mq.end(o);c.emit('open')}
+      else if(m.k==='d')c.emit('data',m.m);else if(m.k==='bye')c.emit('close')},
+    o=>{o.cl.subscribe(T+'/c/'+cid,()=>{o.sub=1;hi();clearInterval(tk);if(!up)tk=setInterval(hi,1500)})});
+  c.close=()=>{clearInterval(tk);try{if(via&&via.up)via.cl.publish(T+'/h',JSON.stringify({c:cid,k:'bye'}))}catch(e){}setTimeout(()=>mq.end(),50)};
+  c.stat=()=>({up:mq.n(),total:MQ_URLS.length,hello:tried});
   return c}
 function onConn(c){
   const o={conn:c,id:0,pos:new THREE.Vector3(0,18,0),x:0,y:18,hp:100,hero:0,dead:0,av:null};let rg=0;
@@ -620,14 +631,17 @@ function onConn(c){
     try{onHost(o,m)}catch(e){showErr('host-msg '+(m&&m.t),e)}});
   c.on('close',()=>{if(!rg)return;if(o.av)scene.remove(o.av);delete NET.cs[c.peer];lobby()});
 }
+const HOSTED=()=>/claude|anthropic/i.test(location.hostname);
 function host(){
+  refreshTurn();
+  if(HOSTED())return say('Multiplayer is blocked on this hosted page. Download index.html and open it from a normal web address (or host it on any site) to play online.');
   if(typeof Peer==='undefined'&&typeof mqtt==='undefined')return say('Multiplayer library did not load. Check your internet and reload.');
   if(NET.peer)return;
   const code=String(Math.floor(1000+Math.random()*9000)),pr=typeof Peer==='undefined'?{on(){},destroy(){}}:new Peer('ABP-'+code,PO),up=()=>{lobby();$('ms').style.display=''};
   NET.role='host';NET.code=code;NET.peer=pr;NET.name=uname();NET.mqUp=0;say('Opening room...');
   mqHost(code,()=>{NET.mqUp=1;up()});
   pr.on('open',up);pr.on('disconnected',()=>{try{pr.reconnect()}catch(e){}});
-  pr.on('error',e=>{if(e.type==='unavailable-id'){NET.peer=null;NET.role='';try{if(NET.mq)NET.mq.end(true)}catch(x){}host()}else if(!NET.mqUp)say('Error: '+e.type)});
+  pr.on('error',e=>{if(e.type==='unavailable-id'){NET.peer=null;NET.role='';try{if(NET.mq)NET.mq.end()}catch(x){}host()}else if(!NET.mqUp)say('Error: '+e.type)});
   pr.on('connection',onConn);
 }
 function startHost(){
@@ -635,6 +649,8 @@ function startHost(){
   NET.roster=mkRoster();NET.run=true;bc({t:'start',r:NET.roster});start();
 }
 function join(){
+  refreshTurn();
+  if(HOSTED())return say('Multiplayer is blocked on this hosted page. Download index.html and open it from a normal web address (or host it on any site) to play online.');
   if(typeof Peer==='undefined'&&typeof mqtt==='undefined')return say('Multiplayer library did not load. Check your internet and reload.');
   const code=$('mc').value.trim().toUpperCase();if(!code)return say('Type the room code first.');
   try{if(NET.peer&&NET.peer.destroy)NET.peer.destroy()}catch(e){}try{if(NET.conn)NET.conn.close()}catch(e){}
@@ -647,14 +663,16 @@ function join(){
     c.on('data',m=>{if(win===c){try{onClient(m)}catch(e){showErr('msg '+(m&&m.t),e)}}});
     c.on('close',()=>{if(win!==c||!NET.role)return;if(state==='play'){state='over';$('t').textContent='HOST LEFT';$('m').textContent='The host disconnected.';$('go').textContent='LEAVE';$('ov').style.display='flex'}else say('Disconnected from the host.')})};
   const startRelay=()=>{if(win||mc||typeof mqtt==='undefined')return;say(pOpen?'Linking to the host (backup route too)...':'Trying the backup route...');mc=mqJoin(code);wire(mc)};
-  const giveUp=()=>{if(win)return;NET.jn=0;try{if(mc)mc.close()}catch(e){}try{if(pr)pr.destroy()}catch(e){}say(pu?'Room not found. Check the code and make sure the host has opened a room, then tap JOIN again.':pOpen?BLK:"Can't reach the matchmaking server. Check your internet (turn off VPN / Low Data Mode) and tap JOIN again.")};
+  const giveUp=()=>{if(win)return;NET.jn=0;const st=mc&&mc.stat?mc.stat():null;try{if(mc)mc.close()}catch(e){}try{if(pr)pr.destroy()}catch(e){}
+    const dg='\n\nDiagnostics: matchmaker '+(pOpen?'OK':'unreachable')+(NET.ice?', direct link '+NET.ice:'')+(st?', backup relays reachable '+st.up+'/'+st.total+(st.up?' but the host did not answer (host must be online with the room open and its lobby must say Backup relay: online)':''):', backup route unavailable');
+    say((pu&&!(st&&st.up)?'Room not found. Check the code and make sure the host has opened a room, then tap JOIN again.':st&&st.up?'Reached the relay but not the host. Check the code and that the host is still in the lobby.':pOpen?BLK:"Can't reach the matchmaking server. Check your internet (turn off VPN / Low Data Mode) and tap JOIN again.")+dg)};
   say('Connecting...');to=setTimeout(giveUp,22000);rt=setTimeout(startRelay,6000);
   if(typeof Peer==='undefined')return startRelay();
   pr=new Peer(undefined,PO);NET.peer=pr;
-  pr.on('error',e=>{if(e.type==='peer-unavailable')pu=1;startRelay()});
+  NET.ice='';pr.on('error',e=>{if(e.type==='peer-unavailable')pu=1;startRelay()});
   pr.on('disconnected',()=>{try{pr.reconnect()}catch(e){}});
   pr.on('open',()=>{pOpen=1;say('Found the server. Linking to the host...');const c=pr.connect('ABP-'+code,{reliable:true});wire(c);
-    try{const pc=c.peerConnection;if(pc)pc.addEventListener('iceconnectionstatechange',()=>{if(pc.iceConnectionState==='failed')startRelay()})}catch(e){}});
+    try{const pc=c.peerConnection;if(pc)pc.addEventListener('iceconnectionstatechange',()=>{NET.ice=pc.iceConnectionState;if(pc.iceConnectionState==='failed')startRelay()})}catch(e){}});
 }
 function onClient(m){
   if(m.t==='me'){NET.me=m.id;if(m.hero!==HERO)pick0(m.hero)}
@@ -751,6 +769,9 @@ function clientStep(dt){
   if(boss)$('bhp').style.width=boss.hp/boss.max*100+'%';
 }
 $('mpb').onclick=()=>{const p=$('mpp');p.style.display=p.style.display==='none'?'':'none'};
+$('mt').onclick=()=>{let cur='';try{cur=localStorage.getItem('abp_turn')||''}catch(e){}
+  const v=prompt('Optional: paste your free TURN servers JSON (from metered.ca) so play works across any network. Both players need it. Leave empty to clear.',cur);if(v===null)return;
+  try{if(!v.trim()){localStorage.removeItem('abp_turn');refreshTurn();return say('TURN key cleared.')}JSON.parse(v);localStorage.setItem('abp_turn',v.trim());refreshTurn();say('TURN key saved. Your friend needs to add it too.')}catch(e){say('That was not valid JSON. Paste the whole servers list from your metered.ca dashboard.')}};
 $('mh').onclick=host;$('mj').onclick=join;$('ms').onclick=startHost;
 {const rq=new URLSearchParams(location.search).get('room');if(rq){$('mc').value=rq.toUpperCase();$('mpp').style.display='';$('mst').textContent='Pick your hero above, then press JOIN.'}}
 
@@ -776,8 +797,8 @@ LISTS[1]=[10,11,2,12,4,3,17,7,18,8,9,29,6];
 LISTS[2]=[13,2,21,4,5,14,17,7,18,8,9,29,6];
 LISTS[3]=[26,2,27,4,5,28,17,7,18,8,9,29,6];
 LISTS[4]=[25,22,2,24,4,23,17,7,18,8,9,29,6];
-PARTS[29]=[['b',8,12,5,0x2a1a6a,0,0,0],['s',2.4,0,0,0x3a2a8a,0,8,0],['b',5.5,1.2,3,0x40e0a0,0,8.4,1.5],['b',8.6,1.4,5.4,0x40d090,0,3,0],['b',2.6,10,2.6,0x2a1a6a,-7,0,0],['b',2.6,10,2.6,0x2a1a6a,7,0,0],['b',3,4,3,0x40d090,-7,6,0],['b',3,4,3,0x40d090,7,6,0],['s',1.4,0,0,0x40ffb0,0,2,3.2]];
-BT.push({n:'KANG THE CONQUEROR',k:29,c:0x8a6aff,sc:1.2,sz:1.5});
+PARTS[29]=[['s',6.5,0,0,0x14002a,0,3,0],['c',1.4,9,0,0x2a0a4a,-4,9,0,.5],['c',1.4,9,0,0x2a0a4a,4,9,0,-.5],['c',1.2,8,0,0x2a0a4a,0,10,0],['b',2,9,2,0x14002a,-8,0,0],['b',2,9,2,0x14002a,8,0,0],['s',1,0,0,0xb060ff,-1.8,4,6.6],['s',1,0,0,0xb060ff,1.8,4,6.6]];
+BT.push({n:'THE VOID',k:29,c:0xb060ff,sc:1.2,sz:1.5});
 PF.splice(0,PF.length,
  {hp:900,rate:2,off:[0],spd:.6,dmg:8,ps:55,sp:['heavy'],si:9},
  {hp:1000,rate:1.3,off:[-6,6],spd:1.3,dmg:10,sp:['charge','heavy'],si:8},
@@ -792,7 +813,7 @@ PF.splice(0,PF.length,
  {hp:2700,rate:.8,off:[-21,-14,-7,0,7,14,21],spd:.8,dmg:18,sp:['x'],si:5,snap:1,L:[['power','space','reality'],['time','mind','soul','power'],['space','soul','mind','power','time']]},
  {hp:3000,rate:.7,off:[-21,-14,-7,0,7,14,21],spd:1.2,dmg:20,sp:['x'],si:4.4,L:[['ring','rift'],['wall','missiles','rift'],['wall','ring','rift','missiles']]},
  {hp:3400,rate:.65,off:[-24,-16,-8,0,8,16,24],spd:1.3,dmg:22,sp:['x'],si:4,L:[['missiles','heavy','aoe'],['tp','heavy','shield','aoe','charge'],['combo','ult','shield','tp','heavy']]});
-const WN2={charge:'CHARGE ATTACK',missiles:'HOMING MISSILES',aoe:'DANGER ZONE: MOVE',shield:'SHIELD UP',heavy:'HEAVY ATTACK',combo:'COMBO',power:'POWER STONE: BLAST ZONE',space:'SPACE STONE: TELEPORT',reality:'REALITY STONE',time:'TIME STONE: YOU WILL SLOW',mind:'MIND STONE: CONTROLS INVERT',soul:'SOUL STONE: SOUL DRAIN',snap:'INFINITY SNAP: HALVES YOUR HEALTH. USE YOUR SHIELD',rift:'TIME RIFTS',wall:'DARK WALL: FIND THE GAP',ring:'TEMPORAL RING',tp:'DOOM TELEPORT',ult:'DOOM ULTIMATE: GET TO THE GREEN ZONE',x:''},
+const WN2={charge:'CHARGE ATTACK',missiles:'HOMING MISSILES',aoe:'DANGER ZONE: MOVE',shield:'SHIELD UP',heavy:'HEAVY ATTACK',combo:'COMBO',power:'POWER STONE: BLAST ZONE',space:'SPACE STONE: TELEPORT',reality:'REALITY STONE',time:'TIME STONE: YOU WILL SLOW',mind:'MIND STONE: CONTROLS INVERT',soul:'SOUL STONE: SOUL DRAIN',snap:'INFINITY SNAP: HALVES YOUR HEALTH. USE YOUR SHIELD',rift:'VOID RIFTS',wall:'DARK WALL: FIND THE GAP',ring:'VOID RING',tp:'DOOM TELEPORT',ult:'DOOM ULTIMATE: GET TO THE GREEN ZONE',x:''},
  TEL={snap:2.6,ult:3,power:1.7,wall:1.7,heavy:1.3};
 function warnTxt(t,ms){const w=$('warn');w.textContent=t;w.style.display='block';clearTimeout(warnTO);warnTO=setTimeout(()=>{w.style.display='none'},ms)}
 const hzM=[0xff2a3a,0x40ff70].map(c=>new THREE.MeshBasicMaterial({color:c,wireframe:true,transparent:true,opacity:.8,blending:THREE.AdditiveBlending})).concat([new THREE.MeshBasicMaterial({color:0x6a2aff,transparent:true,opacity:.55})]);
@@ -876,7 +897,7 @@ function takenH(ex){return [HERO].concat(Object.values(NET.cs).filter(c=>c!==ex&
 function markTaken(tk){[...hd.children].forEach((c,k)=>{c.disabled=tk.includes(k)&&k!==HERO})}
 function lobby(){
   const rows=[(NET.name||'Host')+' (host) - '+HN[HERO]].concat(Object.values(NET.cs).map(c=>c.name+' - '+HN[c.hero])),tk=[HERO].concat(Object.values(NET.cs).map(c=>c.hero));
-  say('Room code: '+NET.code+'\nInvite: '+location.origin+location.pathname+'?room='+NET.code+'\nPlayers ('+rows.length+'/3):\n'+rows.join('\n'));
+  say('Room code: '+NET.code+'\nInvite: '+location.origin+location.pathname+'?room='+NET.code+'\nPlayers ('+rows.length+'/3):\n'+rows.join('\n')+'\nBackup relay: '+(NET.mq&&NET.mq.n()?'online ('+NET.mq.n()+'/'+MQ_URLS.length+')':'offline'));
   bc({t:'lobby',txt:'Joined room '+NET.code+'\nPlayers ('+rows.length+'/3):\n'+rows.join('\n')+'\nWaiting for the host to start...',tk});
   markTaken(tk);$('go').textContent=rows.length>1?'START GAME ('+rows.length+' PLAYERS)':'WAITING FOR FRIENDS...';
 }
